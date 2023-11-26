@@ -1,3 +1,7 @@
+import os
+if os.path.isfile("env.env.py"):
+    import env
+os.environ.get("DATABASE_URL")
 """
 Django settings for django_todo project.
 
@@ -82,9 +86,9 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 #    }
 #}
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://abalfjzm:ivFbokRhNsUBVFq-VS0b8TEkgxHnXAHL@cornelius.db.elephantsql.com/abalfjzm')
-}
+# DATABASES = {
+#    'default': dj_database_url.parse('postgres://abalfjzm:ivFbokRhNsUBVFq-VS0b8TEkgxHnXAHL@cornelius.db.elephantsql.com/abalfjzm')
+#}
 
 
 
